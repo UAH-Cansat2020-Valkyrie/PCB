@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name Cansat-rescue)(type Legacy)(uri C:/Users/natha/Documents/GitHub/KiCad/Cansat-rescue.lib)(options "")(descr ""))
+  (lib (name Secondcansat-rescue)(type Legacy)(uri ${KIPRJMOD}/Secondcansat-rescue.lib)(options "")(descr ""))
+  (lib (name valkyrie_symbols)(type Legacy)(uri ${KIPRJMOD}/valkyrie_symbols.lib)(options "")(descr ""))
 )

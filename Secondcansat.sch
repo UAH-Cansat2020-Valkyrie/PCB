@@ -658,9 +658,9 @@ U 5C8A8A13
 F0 "IMU" 50
 F1 "IMU.sch" 50
 $EndSheet
-Text GLabel 3350 5300 2    50   Input ~ 0
+Text GLabel 3750 5300 2    50   Input ~ 0
 SCL
-Text GLabel 3350 5200 2    50   Input ~ 0
+Text GLabel 3750 5200 2    50   Input ~ 0
 SDA
 $Comp
 L power:GND #PWR058
@@ -1604,4 +1604,91 @@ F 3 "" H 10200 3900 50  0001 C CNN
 	1    10100 3800
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCD0C96
+P 9700 4000
+F 0 "#PWR?" H 9700 3750 50  0001 C CNN
+F 1 "GND" H 9700 3850 50  0000 C CNN
+F 2 "" H 9700 4000 50  0001 C CNN
+F 3 "" H 9700 4000 50  0001 C CNN
+	1    9700 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9850 4000 9750 4000
+Wire Wire Line
+	9850 3900 9750 3900
+Wire Wire Line
+	9750 3900 9750 4000
+Connection ~ 9750 4000
+Wire Wire Line
+	9750 4000 9700 4000
+$Comp
+L power:+5V #PWR?
+U 1 1 5DCDA59C
+P 9700 3600
+F 0 "#PWR?" H 9700 3450 50  0001 C CNN
+F 1 "+5V" H 9700 3740 50  0000 C CNN
+F 2 "" H 9700 3600 50  0001 C CNN
+F 3 "" H 9700 3600 50  0001 C CNN
+	1    9700 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9700 3600 9850 3600
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DCDEF61
+P 3800 4900
+F 0 "#PWR?" H 3800 4750 50  0001 C CNN
+F 1 "+3.3V" H 3800 5040 50  0000 C CNN
+F 2 "" H 3800 4900 50  0001 C CNN
+F 3 "" H 3800 4900 50  0001 C CNN
+	1    3800 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 5300 3650 5300
+Connection ~ 3450 5200
+Wire Wire Line
+	3450 5200 3750 5200
+Wire Wire Line
+	3350 5200 3450 5200
+$Comp
+L Device:R R?
+U 1 1 5DCE8943
+P 3450 5050
+F 0 "R?" H 3520 5096 50  0000 L CNN
+F 1 "10kohm" H 3520 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3380 5050 50  0001 C CNN
+F 3 "~" H 3450 5050 50  0001 C CNN
+	1    3450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DCEE7A3
+P 3650 5150
+F 0 "R?" H 3720 5196 50  0000 L CNN
+F 1 "10kohm" H 3720 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3580 5150 50  0001 C CNN
+F 3 "~" H 3650 5150 50  0001 C CNN
+	1    3650 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 5300
+Wire Wire Line
+	3650 5300 3350 5300
+Wire Wire Line
+	3450 4900 3650 4900
+Wire Wire Line
+	3650 5000 3650 4900
+Connection ~ 3650 4900
+Wire Wire Line
+	3650 4900 3800 4900
+Text GLabel 9850 3700 0    50   Input ~ 0
+SDA
+Text GLabel 9850 3800 0    50   Input ~ 0
+SCL
 $EndSCHEMATC

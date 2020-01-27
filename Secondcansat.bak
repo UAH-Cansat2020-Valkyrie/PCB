@@ -1683,15 +1683,7 @@ F 3 "~" H 5600 700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5150 900  5250 900 
-Wire Wire Line
-	5400 900  5400 700 
-Connection ~ 5250 900 
-Wire Wire Line
-	5250 900  5400 900 
-Wire Wire Line
 	5400 700  5450 700 
-Connection ~ 5400 700 
 $Comp
 L power:GND #PWR0113
 U 1 1 5DE58067
@@ -1968,4 +1960,11 @@ Wire Wire Line
 Connection ~ 2300 1200
 Wire Wire Line
 	2300 1200 2300 1300
+Wire Wire Line
+	5150 900  5150 850 
+Wire Wire Line
+	5150 850  5400 850 
+Wire Wire Line
+	5400 850  5400 700 
+Connection ~ 5400 700 
 $EndSCHEMATC

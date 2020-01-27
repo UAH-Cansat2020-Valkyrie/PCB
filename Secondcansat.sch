@@ -932,13 +932,13 @@ $EndComp
 $Comp
 L power:+6V #PWR01
 U 1 1 5C8F95C8
-P 900 1700
-F 0 "#PWR01" H 900 1550 50  0001 C CNN
-F 1 "+6V" H 915 1873 50  0000 C CNN
-F 2 "" H 900 1700 50  0001 C CNN
-F 3 "" H 900 1700 50  0001 C CNN
-	1    900  1700
-	-1   0    0    1   
+P 900 1300
+F 0 "#PWR01" H 900 1150 50  0001 C CNN
+F 1 "+6V" H 915 1473 50  0000 C CNN
+F 2 "" H 900 1300 50  0001 C CNN
+F 3 "" H 900 1300 50  0001 C CNN
+	1    900  1300
+	0    1    1    0   
 $EndComp
 $Comp
 L power:+3.3V #PWR048
@@ -1713,8 +1713,6 @@ F 3 "~" H 1100 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	900  1050 900  900 
-Wire Wire Line
-	900  1150 900  1300
 $Comp
 L Connector_Generic:Conn_01x03 Servo2
 U 1 1 5E1D8E04
@@ -1967,4 +1965,10 @@ Wire Wire Line
 Wire Wire Line
 	5400 850  5400 700 
 Connection ~ 5400 700 
+Wire Wire Line
+	900  1150 800  1150
+Wire Wire Line
+	800  1150 800  1700
+Wire Wire Line
+	800  1700 900  1700
 $EndSCHEMATC
